@@ -9,6 +9,9 @@ intents:
   - mood_unhappy
   - bot_challenge
 
+action:
+  - ActionGetWarehouseCity
+
 responses:
   utter_greet:
   - text: "Hey! How are you?"
