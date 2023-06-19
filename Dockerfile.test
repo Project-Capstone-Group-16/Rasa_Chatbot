@@ -1,12 +1,11 @@
 FROM python:3.7-slim
 
-RUN python -m pip install rasa && python -m pip install json
+RUN python -m pip install --upgrade pip
+RUN python -m pip install rasa
 
 WORKDIR /app
 ENV HOME=/app
 COPY . .
-
-RUN rasa train nlu
 
 USER 1001
 
