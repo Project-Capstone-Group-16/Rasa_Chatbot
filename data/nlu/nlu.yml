@@ -54,7 +54,7 @@ nlu:
   examples: |
     - di mana saya dapat mendownload aplikasi inventron ?
     - di mana saya dapat mendownload aplikasi ini ? 
-    - 
+    
 
 - intent: ask_device_support 
   examples: |

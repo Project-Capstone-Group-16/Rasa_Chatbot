@@ -58,6 +58,9 @@ responses:
   utter_ask_device: 
   - text: "Inventron dapat anda download dan akses pada platform android melalui play soter dan ios melalui apps store."
 
+  utter_fallblack:
+  - text: "hi untuk sementara saya hanya mengerti text/sentence berupa bahasa indonesia dan hal hal mengenai inventron :)"
+
 session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true
