@@ -1,0 +1,14 @@
+[
+  {
+    "name": "city_name",
+    "pattern": "(\\bpalembang\\b|\\bsurabaya\\b|\\bmalang\\b|\\byokyakrta\\b|\\bjogjakarta\\b|\\bsleman\\b|\\bbanjarmasin\\b|\\bpalangkaraya\\b|\\bmedan\\b|\\bjambi\\b)"
+  },
+  {
+    "name": "city_name",
+    "pattern": "(\\bpalembang\\b|\\bsurabaya\\b|\\bmalang\\b|\\byokyakrta\\b|\\bjogjakarta\\b|\\bsleman\\b|\\bbanjarmasin\\b|\\bpalangkaraya\\b|\\bmedan\\b|\\bjambi\\b)"
+  },
+  {
+    "name": "gender",
+    "pattern": "(\\bwaria\\b|\\blaki\\b|\\bwanita\\b|\\bpria\\b|\\bperempuan\\b)"
+  }
+]

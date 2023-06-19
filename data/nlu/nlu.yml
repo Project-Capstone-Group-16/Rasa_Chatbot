@@ -1,0 +1,105 @@
+version: "3.1"
+
+nlu:
+- intent: greet 
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+    - hi 
+
+- intent: ask_Explanation_inventron
+  examples: |
+    - apa itu inventron ? 
+    - apa produk utama inventron ? 
+    - apa yang di jual oleh inventron ? 
+
+- intent: ask_benefit
+  examples: |
+    - apa saja kelebihan dan keunggulan inventron 
+    - apa saja yang inventron tawarkan 
+    - kenapa saya harus memilih inventron 
+
+- intent: ask_payment_system 
+  examples: |
+    - skema pembayaran apa saja yang digunakan di Inventron ?
+    - metode pembayaran apa saja yang tersedia di inventron ?
+    - kalau mau bayar saya harus pakai apa ?
+    - apakah saya bisa melakukan transaksi menggunakan kartu kredit ? 
+    - apakah saya bisa melakukan pembayaran dengan transfer atm ? 
+
+- intent: ask_detail_goods
+  examples: |
+    - Apakah ada batasan terhadap jenis barang yang dapat disimpan ?
+    - barang apa saja yang bisa simpan di loker inventron ? 
+    - barang apa yang bisa saya simpan di inventron ? 
+
+- intent: ask_Locker_availibility 
+  examples: |
+    - apakah cabang [palembang](city_name) masih memiliki loker yang kosong ?
+    - bagaimana cara melakukan pemesanan loker di inventron ? 
+    - saya ingin memesan loker di [palembang](city_name) ?  
+
+- intent: ask_os_support
+  examples: |
+    - di mana saya dapat mendownload aplikasi inventron ?
+    - di mana saya dapat mendownload aplikasi ini ? 
+    - 
+
+- intent: ask_device_support 
+  examples: |
+    - apakah samsung saya dapat mendownload aplikasi ini ? 
+    - apakah iphone saya dapat mendownload aplikasi ini ?
+    - apakah android dapat mendownload aplikasi ini 
+
+- intent: ask_loker_capacity
+  examples: |
+    - Berapa banyak loker yang tersedia di dalam satu warehouse inventron ?
+    - setiap cabang inventron memilik berapa loker ?
+    - berapa loker yang tersedia di setiap cabang inventron ? 
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+    - apakah kamu manusia ? 
+    - apakah kamu termasuk manusia ? 
+    - apakah kamu chatbot 
+
+- intent: bot_ask_gender 
+  examples: |
+    - apakah kamu [wanita](gender) 
+
+- lookup: city_name
+  examples: |
+    - palembang
+    - surabaya
+    - malang
+    - yokyakrta
+    - jogjakarta 
+    - sleman
+    - banjarmasin
+    - palangkaraya
+    - medan
+    - jambi 
+
+- lookup: gender
+  examples: |
+    - waria
+    - laki
+    - wanita
+    - pria
+    - perempuan 
+
