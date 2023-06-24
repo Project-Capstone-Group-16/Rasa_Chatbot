@@ -22,7 +22,7 @@ entities:
 
 actions:
   - ActionGetWarehouseByCity
-  - ActionGetWarehouseAvailibility
+  - ActionGetAllWarehouse
   
 responses:
   utter_ask_Explanation_inventron:

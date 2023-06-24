@@ -20,6 +20,7 @@ COPY . .
 USER 1001
 
 RUN rasa train
+RUN rasa run actions
 
 ENTRYPOINT ["rasa"]
 CMD ["run", "--enable-api", "--port", "8080"]

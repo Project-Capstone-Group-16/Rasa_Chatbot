@@ -12,7 +12,7 @@ nlu:
     - moin
     - hey there
     - let's go
-    - hey dude
+    - hey dudes
     - goodmorning
     - goodevening
     - good afternoon
@@ -32,8 +32,7 @@ nlu:
 
 - intent: ask_payment_system 
   examples: |
-    - skema pembayaran apa saja yang digunakan di Inventron ?
-    - metode pembayaran apa saja yang tersedia di inventron ?
+    - metode pembayaran apa saja yang tersedia di iskema pembayaran apa saja yang digunakan di Inventron ?nventron ?
     - kalau mau bayar saya harus pakai apa ?
     - apakah saya bisa melakukan transaksi menggunakan kartu kredit ? 
     - apakah saya bisa melakukan pembayaran dengan transfer atm ? 

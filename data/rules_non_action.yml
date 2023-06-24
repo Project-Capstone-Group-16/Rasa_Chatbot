@@ -36,4 +36,7 @@ rules:
   - intent: ask_device_support
   - action: utter_ask_device
 
-
+- rule : ask Locker availibility
+  steps:
+  - intent: ask_Locker_availibility
+  - action: utter_ask_Locker_availibility

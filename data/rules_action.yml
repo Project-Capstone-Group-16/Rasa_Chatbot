@@ -4,9 +4,9 @@ rules:
 - rule: ask inventron availibility 
   steps:
   - intent: ask_Warehouse_Avalibility_By_City
-  - action: ActionGetWarehouseByCity
+  - action: ActionGetAllWarehouse
 
 - rule: ask all city that has inventrone warehouse
   steps:
   - intent: ask_Warehouse_Location
-  - action: ActionGetWarehouseAvailibility
+  - action: ActionGetAllWarehouse
