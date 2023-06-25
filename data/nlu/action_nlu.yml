@@ -1,0 +1,34 @@
+version: "3.1"
+
+
+nlu:
+- intent: ask_Warehouse_Location
+  examples: |
+    - dimana saja saya bisa menemukan outlet invetron ? 
+    - kota mana saja yang memiliki outlet inventron ? 
+    - inventron tersedia di daerah mana saja ? 
+
+- intent: ask_Most_Favorit_Outlet
+  examples: |
+    - kota mana yang meiliki peminat paling banyak ?
+    - outlet mana yang menjadi outlet dengan peminat paling banyak ?
+    - outlet mana saja yang menjadi favorit kostumen ? 
+
+- intent: ask_Warehouse_Avalibility_By_City
+  examples: |
+    - apakah outlet inventron tersedia di kota [palembang](city_name) ? 
+    - [palembang](city_name) apakah memiliki outlet atau cabang inventron ? 
+    - apakah inventron tersedia di [palembang](city_name) ?  
+
+- lookup: city_name
+  examples: |
+    - palembang
+    - surabaya
+    - malang
+    - yokyakrta
+    - jogjakarta 
+    - sleman
+    - banjarmasin
+    - palangkaraya
+    - medan
+    - jambi 

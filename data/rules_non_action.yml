@@ -1,0 +1,42 @@
+version: "3.1"
+
+rules:
+- rule: Say 'I am a bot' anytime the user challenges
+  steps:
+  - intent: bot_challenge
+  - action: utter_iamabot
+
+- rule: ask Explanation inventron
+  steps: 
+  - intent: ask_Explanation_inventron
+  - action: utter_ask_Explanation_inventron
+
+- rule: ask benefit
+  steps:
+  - intent: ask_benefit
+  - action: utter_ask_benefit
+
+- rule: ask which good do we able to store to inventron 
+  steps: 
+  - intent: ask_detail_goods
+  - action: utter_ask_detail_goods
+
+- rule: ask payment system that inventron support
+  steps:
+  - intent: ask_payment_system
+  - action: utter_ask_payment_system
+
+- rule: ask_os_support
+  steps: 
+  - intent: ask_os_support
+  - action: utter_ask_os_support
+
+- rule: ask device support for inventron application
+  steps: 
+  - intent: ask_device_support
+  - action: utter_ask_device
+
+- rule : ask Locker availibility
+  steps:
+  - intent: ask_Locker_availibility
+  - action: utter_ask_Locker_availibility

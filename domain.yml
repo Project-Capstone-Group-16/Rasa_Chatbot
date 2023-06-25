@@ -1,0 +1,66 @@
+version: "3.1"
+
+intents:
+  - greet
+  - bot_challenge
+  - ask_Explanation_inventron
+  - ask_benefit
+  - ask_payment_system
+  - ask_detail_goods
+  - ask_Locker_availibility
+  - ask_os_support
+  - ask_device_support
+  - ask_loker_capacity
+  - bot_ask_gender
+  - ask_Most_Favorit_Outlet
+  - ask_Warehouse_Location
+  - ask_Warehouse_Avalibility_By_City
+
+entities: 
+  - city_name
+  - gender
+
+actions:
+  - ActionGetWarehouseByCity
+  - ActionGetAllWarehouse
+  
+responses:
+  utter_ask_Explanation_inventron:
+  - text: "Inventron adalah sebuah startup yang bergerak di bidang penyewaan loker. Kami menyediakan layanan penyewaan loker dengan berbagai keunggulan dan produk unggulan"
+
+  utter_ask_benefit:
+  - text: "Inventron menawarkan beberapa kelebihan, antara lain: pilihan loker yang aman dan terpercaya, kemudahan dalam proses penyewaan dan pengambilan barang, sistem pembayaran yang fleksibel, dan layanan pelanggan yang responsif."
+
+  utter_ask_payment_system:
+  - text: "Kami menerima berbagai metode pembayaran di Inventron, termasuk transfer bank, kartu kredit, dan pembayaran secara tunai. Untuk informasi lebih lanjut tentang skema pembayaran yang tersedia, silakan kunjungi situs web kami atau hubungi layanan pelanggan kami"
+
+  utter_greet:
+  - text: "Halo! Selamat datang di Inventron. Ada yang bisa saya bantu ?"
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_ask_detail_goods:
+  - text: "Anda dapat menyimpan berbagai jenis barang di loker Inventron, seperti tas, baju, sepatu, dan barang-barang kecil lainnya. Namun, ada beberapa batasan terhadap barang berbahaya, mudah meledak, atau ilegal yang tidak diizinkan disimpan."
+  
+  utter_ask_loker_capacity:
+  - text: " Kapasitas loker di setiap warehouse Inventron bervariasi. Namun, kami berusaha untuk menyediakan cukup banyak loker untuk memenuhi kebutuhan penyimpanan barang anda."
+  
+  utter_ask_Locker_availibility:
+  - text: "kamu dapat melakukan pemesanan dan pengecekan loker melalui aplikasi kami."
+
+  utter_ask_os_support:
+  - text: "Anda dapat mengunduh aplikasi Inventron melalui Google Play Store untuk pengguna Android dan melalui App Store untuk pengguna iOS."
+  
+  utter_iamabot:
+  - text: "saya adalah chatbot yang didevelop oleh team Inventron untuk membantu anda dalam menjawab pertanyaan mengenai informasi Inventron :)"
+  
+  utter_ask_device: 
+  - text: "Inventron dapat anda download dan akses pada platform android melalui play soter dan ios melalui apps store."
+
+  utter_fallblack:
+  - text: "hi untuk sementara saya hanya mengerti text/sentence berupa bahasa indonesia dan hal hal mengenai inventron :)"
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

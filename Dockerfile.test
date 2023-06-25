@@ -1,0 +1,26 @@
+FROM python:3.7-slim
+
+# RUN mkdir -p /app/.config \
+#     && chown -R 1001:1001 /app/.config \
+#     && chmod -R 755 /app/.config
+
+RUN mkdir -p /app/.rasa \
+    && chown -R 1001:1001 /app \
+    && chmod -R 755 /app
+
+RUN python -m pip install --upgrade pip \
+    && python -m pip install SQLAlchemy  \
+    && python -m pip install websockets==10.0 \
+    && python -m pip install rasa
+
+WORKDIR /app
+ENV HOME=/app
+COPY . .
+
+USER 1001
+
+RUN rasa train
+RUN rasa run actions
+
+ENTRYPOINT ["rasa"]
+CMD ["run", "--enable-api", "--port", "8080"]

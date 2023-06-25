@@ -1,0 +1,12 @@
+version: "3.1"
+
+rules:
+- rule: ask inventron availibility 
+  steps:
+  - intent: ask_Warehouse_Avalibility_By_City
+  - action: ActionGetAllWarehouse
+
+- rule: ask all city that has inventrone warehouse
+  steps:
+  - intent: ask_Warehouse_Location
+  - action: ActionGetAllWarehouse
